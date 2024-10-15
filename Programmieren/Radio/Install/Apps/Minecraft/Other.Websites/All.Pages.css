@@ -1,1 +1,18 @@
-https://www.digital-kompass.de/sites/default/files/styles/2_1_510x255/public/2022-02/1024px-internet1_0_0.jpg?h=569ee3a3&itok=l--P92ix
+body {
+  background-image: url("https://www.digital-kompass.de/sites/default/files/styles/2_1_510x255/public/2022-02/1024px-internet1_0_0.jpg?h=569ee3a3&itok=l--P92ix");
+  background-repeat: no-repeat;
+  position: center;
+  background-size: cover;
+}
+
+.nav {
+    background-color: red;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+.nav a {
+    padding: 1%;
+}
