@@ -4,7 +4,7 @@
 }
 
 .c5 {
-    width: 14.2%;
+    width: 12.5%;
     height: 100%;
     position: relative;
     float: left;
@@ -111,4 +111,15 @@ img:hover {
     font-weight: bold;
     font-style: italic;
     font-family: "Anton", sans-serif;
+}
+
+.Websites {
+    text-align: center;
+    font-size: 3em;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: purple;
+    font-family: "Pixelify Sans", sans-serif;
 }

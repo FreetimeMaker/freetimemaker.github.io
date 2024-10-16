@@ -1,0 +1,114 @@
+body {
+  background-image: url("https://www.digital-kompass.de/sites/default/files/styles/2_1_510x255/public/2022-02/1024px-internet1_0_0.jpg?h=569ee3a3&itok=l--P92ix");
+  background-repeat: no-repeat;
+  position: center;
+  background-size: cover;
+}
+
+.nav {
+    background-color: red;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+.nav a {
+    padding: 1%;
+}
+
+.r3 {
+  width: 100%;
+  height: 50%;
+}
+
+.c3 {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.Titel {
+  text-align: center;
+  font-size: 5em;
+  color: purple;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: red;
+  font-family: "Playwrite AT", cursive;
+  -webkit-text-stroke-color: pink;
+  -webkit-text-stroke-width: 0.125px;
+}
+
+.Websites {
+  text-align: center;
+  font-size: 1.5em;
+  color: aqua;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  font-family: "Roboto", sans-serif;
+}
+
+.Aphmau {
+  text-align: center;
+  font-size: 3em;
+  color: pink;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: black;
+  font-family: "Anton", sans-serif;
+}
+
+.Programmieren {
+  text-align: center;
+  font-size: 3em;
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: purple;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.Install {
+  font-size: 2em;
+  color: Pink;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Anton", sans-serif;
+}
+
+.Other {
+  text-align: center;
+  font-size: 3em;
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: purple;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.MC {
+  font-size: 2em;
+  color: Pink;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Anton", sans-serif;
+}
+
+.Radio {
+  text-align: center;
+  font-size: 1.5em;
+  color: aqua;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  font-family: "Roboto", sans-serif;
+}
