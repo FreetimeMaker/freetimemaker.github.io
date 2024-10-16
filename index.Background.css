@@ -142,3 +142,14 @@ img:hover {
     text-decoration-color: black;
     font-family: "Anton", sans-serif;
 }
+
+.Websites {
+    text-align: center;
+    font-size: 1.5em;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: purple;
+    font-family: "Pixelify Sans", sans-serif;
+}
