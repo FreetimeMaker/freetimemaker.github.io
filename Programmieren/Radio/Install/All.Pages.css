@@ -16,3 +16,22 @@ body {
 .nav a {
     padding: 1%;
 }
+
+/* Standard Desktop */
+body {
+  font-size: 18px;
+}
+
+/* Tablets (Querformat) */
+@media (max-width: 1024px) {
+  body {
+      font-size: 16px;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+}
