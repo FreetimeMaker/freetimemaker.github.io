@@ -1,155 +1,98 @@
+/* Haupt-Grid-Einstellungen */
 body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Drei gleich große Spalten */
+    grid-template-rows: repeat(3, 1fr);    /* Drei gleich große Reihen */
+    gap: 15px; /* Abstand zwischen den Grid-Items */
+    padding: 20px;
+    height: 100vh; /* Volle Bildschirmhöhe */
     background: radial-gradient(
         circle,
-        rgb(1,1,1,1) 12.5%,
-        rgb(61,9,121,1) 30%,
-        rgb(255,0,0,1) 25%,
-        rgb(255,0,185,1) 35%,
+        rgb(1, 1, 1) 12.5%,
+        rgb(61, 9, 121) 30%,
+        rgb(255, 0, 0) 25%,
+        rgb(255, 0, 185) 35%,
         rgb(0, 255, 221) 40%,
-        rgb(255,175,0,1) 45%,
-        rgb(0,181,255,1) 50%,
-        rgb(0,14,255,1) 20%
+        rgb(255, 175, 0) 45%,
+        rgb(0, 181, 255) 50%,
+        rgb(0, 14, 255) 20%
     );
 }
 
-.r6 {
-    width: 100%;
-    height: 33.3%;
-}
-
-.c6 {
-    width: 12.5%;
-    height: 100%;
-    position: relative;
-    float: left;
-}
-
-.Titel {
-    text-align: center;
-    font-size: 5em;
-    color: purple;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
-    text-decoration-color: red;
-    font-family: "Playwrite AT", cursive;
-    -webkit-text-stroke-color: pink;
-    -webkit-text-stroke-width: 0.125px;
-}
-
-img {
-    height: auto;
-    width: auto;
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 200px;
-    border: 7px solid orange;
-}
-
-img:hover {
-    transform: scale(1.2);
-    transition: 1s;
-    box-shadow: 10px 10px 10px pink;
-}
-
-.Info {
+/* Grundstruktur und Design für alle Text-Elemente */
+.Info, .Quiz, .Media, .Programmieren, .Radio, .Apps, .Install, .Minecraft, .Websites {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-size: 1.5em;
-    color: purple;
     font-weight: bold;
     font-style: italic;
     text-decoration: underline;
+    padding: 10px;
+    border: 2px solid black; /* Rahmen um jedes Element */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Schattierung */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Individuelle Stile für die spezifischen Bereiche */
+.Info {
+    color: purple;
     text-decoration-color: red;
     font-family: "Pixelify Sans", sans-serif;
 }
 
 .Quiz {
-    text-align: center;
-    font-size: 1.5em;
     color: aqua;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
     text-decoration-color: orange;
     font-family: "Roboto", sans-serif;
 }
 
 .Media {
-    text-align: center;
-    font-size: 1.5em;
     color: pink;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
     text-decoration-color: black;
     font-family: "Anton", sans-serif;
 }
 
 .Programmieren {
-    text-align: center;
-    font-size: 1.5em;
     color: red;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
     text-decoration-color: purple;
     font-family: "Pixelify Sans", sans-serif;
 }
 
 .Radio {
-    text-align: center;
-    font-size: 1.5em;
     color: aqua;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
     text-decoration-color: orange;
     font-family: "Roboto", sans-serif;
 }
 
 .Apps {
-    text-align: center;
-    font-size: 1.5em;
     color: pink;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
     text-decoration-color: black;
     font-family: "Anton", sans-serif;
 }
 
 .Install {
-    text-align: center;
-    font-size: 1.5em;
     color: red;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
     text-decoration-color: purple;
     font-family: "Pixelify Sans", sans-serif;
 }
 
 .Minecraft {
-    text-align: center;
-    font-size: 1.5em;
     color: pink;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
     text-decoration-color: black;
     font-family: "Anton", sans-serif;
 }
 
 .Websites {
-    text-align: center;
-    font-size: 1.5em;
     color: red;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
     text-decoration-color: purple;
     font-family: "Pixelify Sans", sans-serif;
+}
+
+/* Hover-Effekt für die Grid-Items */
+.Info:hover, .Quiz:hover, .Media:hover, .Programmieren:hover, .Radio:hover, .Apps:hover, .Install:hover, .Minecraft:hover, .Websites:hover {
+    transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Dunklere Schattierung beim Hover */
 }
