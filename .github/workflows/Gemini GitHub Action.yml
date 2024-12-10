@@ -1,3 +1,0 @@
-              - name: Gemini Github Action
-                uses: iletai/GeminiAction@2.0.0
-            

@@ -1,3 +1,0 @@
-              - name: Signed APK Builder
-                uses: TeamNecta/build-signed-apk@v2.1
-            

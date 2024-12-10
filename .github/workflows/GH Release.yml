@@ -1,3 +1,0 @@
-              - name: GH Release
-                uses: softprops/action-gh-release@v2.0.8
-            

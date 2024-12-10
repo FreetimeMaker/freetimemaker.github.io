@@ -1,3 +1,0 @@
-              - name: Homey App — Translate
-                uses: athombv/github-action-homey-app-translate@v1
-            

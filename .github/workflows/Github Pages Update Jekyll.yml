@@ -1,3 +1,0 @@
-              - name: Jekyll update github pages without new commit
-                uses: DP6/jekyll-update-pages-action@v1.0.1
-            
