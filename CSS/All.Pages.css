@@ -1,0 +1,63 @@
+body {
+    background-image: url("https://th.bing.com/th/id/R.0539844a88c4935285b55d2a6f26782b?rik=BJVyc50f5BL6iw&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    position: center;
+    background-size: cover;
+}
+
+.r3 {
+    width: 100%;
+    height: 33.3%;
+}
+
+.Titel {
+    text-align: center;
+    font-size: 2.5em;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    font-family: "Playwrite AT", cursive;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 0.125px;
+}
+
+.Text {
+    text-align: center;
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    font-family: "Playwrite AT", cursive;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 0.125px;
+}
+
+a {
+    text-align: center;
+    font-size: 1.25em;
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-family: "Playwrite AT", cursive;
+    -webkit-text-stroke-color: orange;
+    -webkit-text-stroke-width: 0.125px;
+}
+
+footer {
+    text-align: center;
+    font-size: 2.5em;
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-family: "Playwrite AT", cursive;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 0.125px;
+}
