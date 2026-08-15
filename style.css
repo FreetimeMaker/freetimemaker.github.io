@@ -154,11 +154,11 @@ div {
     }
 
     .langs {
-        gap: 5px;
+        gap: 20px;
     }
 
     .projects {
-        gap: 5px;
+        gap: 20px;
     }
 
     .projectscontainer img {
@@ -200,11 +200,11 @@ div {
     }
 
     .langs {
-        gap: 20px;
+        gap: 5px;
     }
 
     .projects {
-        gap: 20px;
+        gap: 5px;
     }
 }
 
