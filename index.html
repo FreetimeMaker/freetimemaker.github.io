@@ -1,67 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/All.Pages.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Anton&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="Icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Icons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="Icons/android-chrome-512x512.png">
     <link rel="icon" type="image/x-icon" href="Icons/favicon.ico">
-    <title>All about me</title>
-    <meta name="msvalidate.01" content="B687541720EFD6F5F2B2DB225E7FA2FD" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQBDN8SV01"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-XQBDN8SV01');
-    </script>
+    <link rel="manifest" href="Icons/site.webmanifest">
 </head>
 <body>
-    <div class="r4">
-        <h1 class="Titel">All about me</h1>
+<button id="darkModeBtn" class="darkmodebtn">🌙 Dark Mode</button>
+<h1 class="title">My Portfolio</h1>
+<p class="welcome">Hello, I'm Freetime Maker and I like to make Web and Android Apps.</p>
+<h1 class="langstitle">Here are Technologies I worked with listed.</h1>
+<div class="langscontainer">
+    <div class="langs">
+        <div class="java">
+            <div class="javapicdiv">
+                <img class="javapic langpic" src="images/java.png" alt="Java Logo">
+            </div>
+            <h2 class="javatxt langstxt">Java</h2>
+        </div>
+        <div class="html">
+            <div class="htmlpicdiv">
+                <img class="htmlpic langpic" src="images/html.png" alt="HTML Logo">
+            </div>
+            <h2 class="htmltxt langstxt">HTML 5</h2>
+        </div>
+        <div class="cs">
+            <div class="cspicdiv">
+                <img class="cspic langpic" src="images/cs.png" alt="C# Logo">
+            </div>
+            <h2 class="cstxt langstxt">C#</h2>
+        </div>
+        <div class="css">
+            <div class="csspicdiv">
+                <img class="csspic langpic" src="images/css.png" alt="CSS Logo">
+            </div>
+            <h2 class="csstxt langstxt">CSS</h2>
+        </div>
     </div>
-    <div class="r3">
-        <h2 class="Titel">About Me</h2>
-        <p class="Text">I am 15 Years old and I live in Switzerland.</p>
-        <p class="Text">I started to get interested about Programming since I was 11.</p>
-        <p class="Text">I started to Program when I was 12 and learned it at the <a href="https://www.codecampworld.ch/" target="_blank">Code Camp Switzerland.</a> After that I was in the following Camps: Spark, Ignite and Web.</p>
-        <p class="Text">I programmed a few Apps and Games using Android Studio and Unity. <a href="https://www.amazon.de/s?i=mobile-apps&rh=p_4%3AFreetime&search-type=ss" target="_blank">Here's the Link to Amazon where I have uploaded my games</a> <a class="Itch" href="https://freetime-maker.itch.io/" target="_blank">and here for Itch.</a></p>
-        <p class="Text">I create my Apps and Games usually for Android and sometimes for Windows and Linux.</p>
-        <p class="Text">I need to find a new Appstore for my Apps and Games because the Amazon Appstore is closing in August 2025 and Google Play Console is too expensive. So if you have an Idea for me, please write me an E-Mail to this <a href="mailto:jamieachatz@gmail.com?subject=Android Appstore Alternative" target="_blank">E-Mail Address.</a></p>
-        <p class="Text">I am also interested in Web Development and I am learning it at the moment.</p>
-        <p class="Text">I also want to learn several new things like Minecraft Modding.</p>
-        <p class="Text">I have a GitHub Account where I store almost everything <a href="https://github.com/FreetimeMaker/" target="_blank">here's the Link to my GitHub Account.</a><a href="https://github.com/Freetime-Maker/" target="_blank"></a> And here for my 2nd Account.</p>
-        <p class="Text">I also make Minecraft Projects that can be watched at<a href="https://www.curseforge.com/members/freetime_maker/projects" target="_blank"> CurseForge </a> or <a href="https://modrinth.com/user/FreetimeMaker" target="_blank">on Modrinth.</a> </p>
-        <p class="Text">I have my own App Store so make sure to check it out. <a href="https://github.com/FreetimeMaker/Freetime-App-Store/" target="_blank">Heres the Link to the GitHub Repository</a><a href="https://github.com/FreetimeMaker/Freetime-App-Store/releases/latest/" target="_blank"></a> and here's the latest Release.</p>
+    <div class="langs">
+        <div class="gh">
+            <div class="ghpicdiv">
+                <img class="ghpic langpic" src="images/gh.png" alt="GitHub Logo">
+            </div>
+            <h2 class="ghtxt langstxt">GitHub</h2>
+        </div>
+        <div class="git">
+            <div class="gitpicdiv">
+                <img class="gitpic langpic" src="images/git.png" alt="Git Logo">
+            </div>
+            <h2 class="gittxt langstxt">Git</h2>
+        </div>
+        <div class="gitlab">
+            <div class="gitlabpicdiv">
+                <img class="gitlabpic langpic" src="images/gitlab.png" alt="GitLab Logo">
+            </div>
+            <h2 class="gitlabtxt langstxt">GitLab</h2>
+        </div>
+        <div class="kt">
+            <div class="ktpicdiv">
+                <img class="ktpic langpic" src="images/kt.png" alt="Kotlin Logo">
+            </div>
+            <h2 class="kttxt langstxt">Kotlin</h2>
+        </div>
+        <div class="linux">
+            <div class="linuxpicdiv">
+                <img class="linuxpic langpic" src="images/linux.png" alt="Linux Logo">
+            </div>
+            <h2 class="linuxtxt langstxt">Linux</h2>
+        </div>
     </div>
-    <div class="r4">
-        <h2 class="Titel">My Other Websites</h2>
-        <p class="Text"><a href="https://freetimemaker.github.io/The-Flash/" target="_blank">The Flash</a></p> <br>
-        <p class="Text"><a href="https://freetimemaker.github.io/SuperSMP/" target="_blank">A Website extra for a Minecraft Server called SuperSMP</a></p> <br>
-        <p class="Text"><a href="https://freetimemaker.github.io/All-About-Aphmau/" target="_blank">All about the YouTuber Aphmau</a></p> <br>
-        <p class="Text"><a href="https://freetimemaker.github.io/Squid-Game/" target="_blank">Squid Game</a></p> <br>
-        <p class="Text"><a href="https://freetimemaker.github.io/Candles/" target="_blank">All about Candles</a></p> <br>
-        <p class="Text"><a href="https://freetimemaker.github.io/Simple-Clock/" target="_blank">Simple Clock that shows AM and PM</a></p> <br>
-        <p class="Text"><a href="https://freetimemaker.github.io/Simple-Clock-of-your-Time/" target="_blank">This is like the Website above but without AM and PM</a></p>
-        <p class="Text"><a href="https://freetimemaker.github.io/Weather/" target="_blank">To View the Weather in any City on the Planet</a></p>
-        <p class="Text"><a href="https://freetimemaker.github.io/Freetime-Maker-Shop/" target="_blank">My own Online Shop</a></p>
-        <p class="Text"><a href="https://freetimemaker.github.io/Donation-Web/" target="_blank">You can make a Donation to me so I can continue creating more Apps, Games and Website for everyone.</a>
+</div>
+<h1 class="projectstitle">Here are Projects that I've made listed.</h1>
+<div class="projectscontainer">
+    <div class="projects">
+        <div class="geoweather">
+            <div class="geoweatherpicdiv">
+                <img class="geoweatherpic" src="images/geoweather.png" alt="GeoWeather Logo">
+            </div>
+            <h2 class="geoweathertxt projectstxt">GeoWeather</h2>
+        </div>
+        <div class="ssmpc">
+            <div class="ssmpcpicdiv">
+                <img class="ssmpcpic" src="images/ssmpc.png" alt="SuperSMP Companion Logo">
+            </div>
+            <h2 class="ssmpctxt projectstxt">SuperSMP Companion</h2>
+        </div>
+        <div class="freetimesdk">
+            <div class="freetimesdkpicdiv">
+                <img class="freetimesdkpic" src="images/freetimesdk.png" alt="FreetimeSDK Logo">
+            </div>
+            <h2 class="freetimesdktxt projectstxt">FreetimeSDK</h2>
+        </div>
     </div>
-    <div class="r4">
-        <h2 class="Titel">News about what I am doing</h2>
-        <p class="Text"><a href="https://www.youtube.com/@FreetimeMaker-Programmer-Music" target="_blank">To view videos about what I am doing at the moment. Even my own Songs!</a></p>
-        <p class="Text"><a href="https://discord.gg/zPFvwK9pNh" target="_blank">To view news about what I am doing at the moment.</a></p>
+</div>
+<h1 class="projectsactiontitle">Here are the Projekts I've made in Action</h1>
+<div class="projectsaction">
+    <div class="geoweatheractionspics">
+        <h1 class="geoweatheractiontxt">Here you can see GeoWeather in Action.</h1>
+        <div class="geoweatheractionsdiv">
+            <div class="geoweatheractiondiv1">
+                <div class="geoweatheractionpicdiv1">
+                    <img class="geoweatheractionpic1" src="images/geoweatheraction1.png" alt="First Picture of GeoWeather in Action">
+                </div>
+                <h2 class="geoweatheractiontxt1 geoweatheractiontxts">GeoWeather Homepage</h2>
+            </div>
+            <div class="geoweatheractiondiv2">
+                <div class="geoweatheractionpicdiv2">
+                    <img class="geoweatheractionpic2" src="images/geoweatheraction2.png" alt="Second Picture of GeoWeather in Action">
+                </div>
+                <h2 class="geoweatheractiontxt2 geoweatheractiontxts">GeoWeather Searchpage</h2>
+            </div>
+            <div class="geoweatheractiondiv3">
+                <div class="geoweatheractionpicdiv3">
+                    <img class="geoweatheractionpic3" src="images/geoweatheraction3.png" alt="Third Picture of GeoWeather in Action">
+                </div>
+                <h2 class="geoweatheractiontxt3 geoweatheractiontxts">GeoWeather Weatherpage 1</h2>
+            </div>
+            <div class="geoweatheractiondiv4">
+                <div class="geoweatheractionpicdiv4">
+                    <img class="geoweatheractionpic4" src="images/geoweatheraction4.png" alt="Fourth Picture of GeoWeather in Action">
+                </div>
+                <h2 class="geoweatheractiontxt4 geoweatheractiontxts">GeoWeather Weatherpage 2</h2>
+            </div>
+        </div>
     </div>
-    <div class="r4">
+    <div class="ssmpcandlinks">
+        <div class="ssmpcactionspics">
+            <h1 class="ssmpcactiontxt">Here you can see SuperSMP Companion in Action.</h1>
+            <div class="ssmpcactionsdiv">
+                <div class="ssmpcaction1">
+                    <img class="ssmpcactionpic1" src="images/ssmpcaction1.png" alt="First Picture of SuperSMP Companion in Action">
+                    <h2 class="ssmpcactiontxt1">SuperSMP Companion Shoppage with Cookies Text</h2>
+                </div>
+                <div class="ssmpcaction2">
+                    <img class="ssmpcactionpic2" src="images/ssmpcaction2.png" alt="Second Picture of SuperSMP Companion in Action">
+                    <h2 class="ssmpcactiontxt2">SuperSMP Companion Shopspage without Cookies Text</h2>
+                </div>
+                <div class="ssmpcaction3">
+                    <img class="ssmpcactionpic3" src="images/ssmpcaction3.png" alt="Third Picture of SuperSMP Companion in Action">
+                    <h2 class="ssmpcactiontxt3">SuperSMP Mappage</h2>
+                </div>
+            </div>
+        </div>
+        <h1 class="projectlinkstitle">Here are URL's to the Projekts I've made.</h1>
+        <div class="projectlinksdiv">
+            <div class="geoweatherlink">
+                <h2>
+                    <a class="geoweatherlink" href="https://github.com/FreetimeMaker/GeoWeather" target="_blank" title="Look at the Source Code of GeoWeather on GitHub.">GeoWeather on GitHub</a>
+                </h2>
+            </div>
+            <div class="ssmpclink">
+                <h2>
+                    <a class="ssmpclink" href="https://github.com/FreetimeMaker/SuperSMP-Companion-App" target="_blank" title="Look at the Source Code of SuperSMP Companion on GitHub.">SuperSMP Companion on GitHub</a>
+                </h2>
+            </div>
+            <div class="freetimesdklink">
+                <h2>
+                    <a class="freetimesdklink" href="https://github.com/FreetimeMaker/FreetimeSDK" target="_blank" title="Look at the Source Code of FreetimeSDK on GitHub.">FreetimeSDK on GitHub</a>
+                </h2>
+            </div>
+        </div>
         <footer>
-            &copy; 2025 Freetime Maker
+            <p>&copy;  2026 FreetimeMaker</p>
         </footer>
     </div>
+</div>
 </body>
-
 </html>

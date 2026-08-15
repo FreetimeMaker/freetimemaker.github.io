@@ -1,0 +1,1001 @@
+:root {
+    --bg: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    --text: white;
+    --img-bg: rgba(255, 255, 255, 0.4);
+    --gw-txt: rgba(96, 12, 141, 0.8);
+    --ssmpc-txt: rgba(208, 127, 71, 0.8);
+    --fsdk-txt: rgba(0, 128, 0, 0.8);
+    --button-bg: #111111;
+    --button-text: #eeeeee;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: linear-gradient(90deg,rgba(255, 158, 158, 1) 0%, rgba(143, 255, 156, 1) 100%);
+        --text: black;
+        --img-bg: rgba(0, 0, 0, 0.4);
+        --gw-txt: rgba(12, 141, 89, 0.8);
+        --ssmpc-txt: rgb(255, 0, 0);
+        --fsdk-txt: rgb(0, 30, 255);
+        --button-bg: #eeeeee;
+        --button-text: #111111;
+    }
+}
+
+html.dark {
+    --bg: linear-gradient(90deg,rgba(255, 158, 158, 1) 0%, rgba(143, 255, 156, 1) 100%);
+    --text: black;
+    --img-bg: rgba(0, 0, 0, 0.4);
+    --gw-txt: rgba(12, 141, 89, 0.8);
+    --ssmpc-txt: rgb(255, 0, 0);
+    --fsdk-txt: rgb(0, 30, 255);
+    --button-bg: #eeeeee;
+    --button-text: #111111;
+}
+
+/* Manueller Light Mode */
+html.light {
+    --bg: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    --text: white;
+    --img-bg: rgba(255, 255, 255, 0.4);
+    --gw-txt: rgba(96, 12, 141, 0.8);
+    --ssmpc-txt: rgba(208, 127, 71, 0.8);
+    --fsdk-txt: rgba(0, 128, 0, 0.8);
+    --button-bg: #111111;
+    --button-text: #eeeeee;
+}
+
+.darkmodebtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 10px 16px;
+    background: var(--button-bg);
+    color: var(--button-text);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.darkmodebtn:hover {
+    opacity: 0.8;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.langs img {
+    max-width: 180px;
+    height: auto;
+    border-radius: 50%;
+    background-color: var(--img-bg);
+}
+
+.projects img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    background-color: var(--img-bg);
+}
+
+h2 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.langs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div {
+    margin: 10px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 480px) {
+    .langs,
+    .langscontainer,
+    .projects,
+    .projectscontainer,
+    .geoweatheractionsdiv,
+    .ssmpcactionsdiv,
+    .java,
+    .html,
+    .cs,
+    .css,
+    .gh,
+    .git,
+    .gitlab,
+    .kt,
+    .linux,
+    .projectlinksdiv{
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 8px;
+    }
+
+    h2 {
+        font-size: 9px;
+    }
+
+    .langs img {
+        max-width: 25px;
+    }
+
+    .langs {
+        gap: 5px;
+    }
+
+    .projects {
+        gap: 5px;
+    }
+
+    .projectscontainer img {
+        max-width: 35.3625px;
+    }
+
+    .geoweatheractionspics img {
+        max-width: 25px;
+        margin: 2.5px;
+    }
+
+    .ssmpcactionspics img {
+        max-width: 25px;
+        margin: 2.5px;
+    }
+
+    .darkmodebtn {
+        max-width: 75px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .langs,
+    .langscontainer,
+    .projects,
+    .projectscontainer,
+    .geoweatheractionsdiv,
+    .ssmpcactionsdiv,
+    .java,
+    .html,
+    .cs,
+    .css,
+    .gh,
+    .git,
+    .gitlab,
+    .kt,
+    .linux {
+        flex-direction: row;
+    }
+
+    .langs {
+        gap: 20px;
+    }
+
+    .projects {
+        gap: 20px;
+    }
+}
+
+.geoweatheractionspics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.geoweatheractionspics img {
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+.ssmpcactionspics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.ssmpcactionspics img {
+    max-width: 250px;
+    height: auto;
+    margin: 10px;
+}
+
+.geoweatherlink a {
+    color: var(gw-txt);
+    text-decoration: none;
+}
+
+.ssmpclink a {
+    color: var(--ssmpc-txt);
+    text-decoration: none;
+}
+
+.freetimesdklink a {
+    color: var(--fsdk-txt);
+    text-decoration: none;
+}
+
+.projectlinksdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.java {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.javapic{
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.javatxt {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.java:hover .javatxt {
+    opacity: 1;
+    visibility: visible;
+}
+
+.java:hover .javapic {
+    transform: scale(1.1);
+}
+
+.html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.htmlpic {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.htmltxt {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.html:hover .htmltxt {
+    opacity: 1;
+    visibility: visible;
+}
+
+.html:hover .htmlpic {
+    transform: scale(1.1);
+}
+
+.cs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.cspic {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.cstxt {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.cs:hover .cstxt {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cs:hover .cspic {
+    transform: scale(1.1);
+}
+
+.css {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.csspic {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.css:hover .csstxt {
+    opacity: 1;
+    visibility: visible;
+}
+
+.css:hover .csspic {
+    transform: scale(1.1);
+}
+
+.gh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.ghpic {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.ghtxt {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.gh:hover .ghtxt {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gh:hover .ghpic {
+    transform: scale(1.1);
+}
+
+.git {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.gitpic {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gittxt {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.git:hover .gittxt {
+    opacity: 1;
+    visibility: visible;
+}
+
+.git:hover .gitpic {
+    transform: scale(1.1);
+}
+
+.gitlab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.gitlabpic {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gitlabtxt {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.gitlab:hover .gitlabtxt {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gitlab:hover .gitlabpic {
+    transform: scale(1.1);
+}
+
+.kt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.ktpic {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.kttxt {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.kt:hover .kttxt {
+    opacity: 1;
+    visibility: visible;
+}
+
+.kt:hover .ktpic {
+    transform: scale(1.1);
+}
+
+.linux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.linuxpic {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.linuxtxt {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.linux:hover .linuxtxt {
+    opacity: 1;
+    visibility: visible;
+}
+
+.linux:hover .linuxpic {
+    transform: scale(1.1);
+}
+
+.langstxt {
+    opacity: 0;
+}
+
+@keyframes change-opacity-to-0 {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.projectstitle .projectscontainer .projects {
+    opacity: 0;
+    animation-timeline: view();
+    animation-name: fade-scroll;
+    animation-fill-mode: both;
+    animation: fadeIn linear both, fadeOut linear both;
+    animation-range: entry -100% entry 20%, exit 80% exit 100%;
+}
+
+.title {
+    opacity: 0;
+    animation: change-opacity-to-1 1.75s ease both;
+}
+
+@keyframes change-opacity-to-1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.welcome {
+    opacity: 0;
+    animation: change-opacity-to-1 1.75s ease forwards;
+    animation-delay: 1s;
+}
+
+.langstitle {
+    opacity: 0;
+    animation: change-opacity-to-1 1.75s ease forwards;
+    animation-delay: 2s;
+}
+
+.langscontainer {
+    opacity: 0;
+    animation: change-opacity-to-1 1.75s ease forwards;
+    animation-delay: 3s;
+}
+
+.projectstitle {
+    animation: text-appear ease-in both;
+    animation-timeline: view();
+    animation-range: 0vh 70vh;
+}
+
+.projectscontainer {
+    animation: image-appear ease-in both;
+    animation-timeline: view();
+    animation-range: entry 50% 100vh;
+}
+
+.ssmpcandlinks {
+    animation: image-appear ease-in both;
+    animation-timeline: view();
+    animation-range: entry 50% 100vh;
+}
+
+.projectstxt {
+    opacity: 0;
+}
+
+@prefers-reduced-motion {
+    projectstitle, projectscontainer, projectsactiontitle, projectsaction, projectlinkstitle, projectlinksdiv  {
+        animation: none;
+    }
+}
+
+@keyframes image-appear {
+    from {
+        filter: saturate(0) contrast(4) brightness(.1) blur(3px);
+        opacity: 0;
+        scale: .95;
+        translate: 0 4rem;
+    }
+}
+
+@keyframes text-appear {
+    from {
+        opacity: 0;
+        translate: 0 8rem;
+    }
+}
+
+.projectsactiontitle {
+    animation: text-appear ease-in both;
+    animation-timeline: view();
+    animation-range: 0vh 70vh;
+}
+
+.geoweatheractionspics {
+    animation: image-appear ease-in both;
+    animation-timeline: view();
+    animation-range: entry 50% 100vh;
+}
+
+.ssmpcactionspics {
+    animation: image-appear ease-in both;
+    animation-timeline: view();
+    animation-range: entry 50% 100vh;
+}
+
+.geoweather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.geoweatherpic {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.geoweathertxt {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.geoweather:hover .geoweathertxt {
+    opacity: 1;
+    visibility: visible;
+}
+
+.geoweather:hover .geoweatherpic {
+    transform: scale(1.1);
+}
+
+.ssmpc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.ssmpcpic {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.ssmpctxt {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.ssmpc:hover .ssmpctxt {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ssmpc:hover .ssmpcpic {
+    transform: scale(1.1);
+}
+
+.freetimesdk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.freetimesdkpic {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.freetimesdktxt {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.freetimesdk:hover .freetimesdktxt {
+    opacity: 1;
+    visibility: visible;
+}
+
+.freetimesdk:hover .freetimesdkpic {
+    transform: scale(1.1);
+}
+
+.geoweatheractionsdiv {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.geoweatheractiontxts {
+    opacity: 0;
+}
+
+.geoweatheractiondiv1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.geoweatheractionpic1 {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.geoweatheractiontxt1 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.geoweatheractiondiv1:hover .geoweatheractiontxt1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.geoweatheractiondiv1:hover .geoweatheractionpic1 {
+    transform: scale(1.1);
+}
+
+.geoweatheractiondiv2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.geoweatheractionpic2 {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.geoweatheractiontxt2 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.geoweatheractiondiv2:hover .geoweatheractiontxt2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.geoweatheractiondiv2:hover .geoweatheractionpic2 {
+    transform: scale(1.1);
+}
+
+.geoweatheractiondiv3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.geoweatheractionpic3 {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.geoweatheractiontxt3 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.geoweatheractiondiv3:hover .geoweatheractiontxt3 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.geoweatheractiondiv3:hover .geoweatheractionpic3 {
+    transform: scale(1.1);
+}
+
+.geoweatheractiondiv4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.geoweatheractionpic4 {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.geoweatheractiontxt4 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.geoweatheractiondiv4:hover .geoweatheractiontxt4 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.geoweatheractiondiv4:hover .geoweatheractionpic4 {
+    transform: scale(1.1);
+}
+
+.ssmpcactionsdiv {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.ssmpcaction1 {
+    text-align: center;
+    display: inline-block;
+}
+
+.ssmpcaction1 img {
+    display: block;
+    margin: 0 auto;
+}
+
+.ssmpcaction1 h2 {
+    max-width: 250px;
+    margin: 30px auto;
+}
+
+.ssmpcaction2 {
+    text-align: center;
+    display: inline-block;
+}
+
+.ssmpcaction2 img {
+    display: block;
+    margin: 0 auto;
+}
+
+.ssmpcaction2 h2 {
+    max-width: 250px;
+    margin: 30px auto;
+}
+
+.ssmpcaction3 {
+    text-align: center;
+    display: inline-block;
+}
+
+.ssmpcaction3 img {
+    display: block;
+    margin: 0 auto;
+}
+
+.ssmpcaction3 h2 {
+    max-width: 250px;
+    margin-top: 96.25px;
+}
+
+.ssmpcaction1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.ssmpcactionpic1 {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.ssmpcactiontxt1 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.ssmpcaction1:hover .ssmpcactiontxt1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ssmpcaction1:hover .ssmpcactionpic1 {
+    transform: scale(1.1);
+}
+
+.ssmpcaction2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.ssmpcactionpic2 {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.ssmpcactiontxt2 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.ssmpcaction2:hover .ssmpcactiontxt2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ssmpcaction2:hover .ssmpcactionpic2 {
+    transform: scale(1.1);
+}
+
+.ssmpcaction3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.ssmpcactionpic3 {
+    display: block;
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.ssmpcactiontxt3 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.ssmpcaction3:hover .ssmpcactiontxt3 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ssmpcaction3:hover .ssmpcactionpic3 {
+    transform: scale(1.1);
+}
