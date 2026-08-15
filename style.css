@@ -104,6 +104,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
 }
 
 div {
@@ -179,6 +180,10 @@ div {
     .darkmodebtn {
         max-width: 75px;
     }
+
+    div {
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 481px) {
@@ -206,6 +211,10 @@ div {
 
     .projects {
         gap: 20px;
+    }
+
+    div {
+        margin: 10px;
     }
 }
 
