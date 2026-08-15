@@ -115,11 +115,14 @@ div {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
 }
 
 @media screen and (max-width: 480px) {
     .langs,
+    .langscontainer,
     .projects,
+    .projectscontainer,
     .geoweatheractionsdiv,
     .ssmpcactionsdiv,
     .java,
@@ -152,11 +155,11 @@ div {
     }
 
     .langs {
-        gap: 20px;
+        gap: 5px;
     }
 
     .projects {
-        gap: 20px;
+        gap: 5px;
     }
 
     .projectscontainer img {
@@ -198,11 +201,11 @@ div {
     }
 
     .langs {
-        gap: 5px;
+        gap: 20px;
     }
 
     .projects {
-        gap: 5px;
+        gap: 20px;
     }
 }
 
