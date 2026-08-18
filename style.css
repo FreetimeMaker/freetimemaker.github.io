@@ -135,7 +135,8 @@ div {
     .gitlab,
     .kt,
     .linux,
-    .projectlinksdiv{
+    .projectlinksdiv,
+    .otherWebs{
         flex-direction: column;
     }
 
@@ -201,7 +202,9 @@ div {
     .git,
     .gitlab,
     .kt,
-    .linux {
+    .linux,
+    .projectlinksdiv,
+    .otherWebs{
         flex-direction: row;
     }
 
