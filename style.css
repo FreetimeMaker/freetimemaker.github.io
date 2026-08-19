@@ -7,8 +7,6 @@
     --fsdk-txt: rgba(0, 128, 0, 0.8);
     --button-bg: #111111;
     --button-text: #eeeeee;
-    --don-txt: rgba(255, 0, 0, 0.8);
-    --shop-txt: rgba(98, 255, 0, 0.8);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,8 +19,6 @@
         --fsdk-txt: rgb(0, 30, 255, 0.8);
         --button-bg: #eeeeee;
         --button-text: #111111;
-        --don-txt: rgb(95 0 0 / 0.8);
-        --shop-txt: rgb(61 156 0 / 0.8);
     }
 }
 
@@ -35,8 +31,6 @@ html.dark {
     --fsdk-txt: rgb(0, 30, 255);
     --button-bg: #eeeeee;
     --button-text: #111111;
-    --donation-txt: rgb(95 0 0 / 0.8);
-    --shop-txt: rgb(61 156 0 / 0.8);
 }
 
 /* Manueller Light Mode */
@@ -49,8 +43,6 @@ html.light {
     --fsdk-txt: rgba(0, 128, 0, 0.8);
     --button-bg: #111111;
     --button-text: #eeeeee;
-    --donation-txt: rgba(255, 0, 0, 0.8);
-    --shop-txt: rgba(98, 255, 0, 0.8);
 }
 
 .darkmodebtn {
@@ -73,7 +65,6 @@ body {
     background: var(--bg);
     color: var(--text);
 }
-
 
 h1 {
     text-align: center;
@@ -119,7 +110,7 @@ div {
     margin: 10px;
 }
 
-.otherWebs {
+.projects {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,12 +118,102 @@ div {
     gap: 20px;
 }
 
-.projects {
+.kontaktieren {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 520px);
+    gap: 16px;
+    padding: 24px 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(4px);
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    text-align: left;
+}
+
+.form-row label {
+    min-width: 90px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.form-row input,
+.form-row textarea {
+    flex: 1;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--text);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.form-row input::placeholder,
+.form-row textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.comment-row {
+    align-items: flex-start;
+}
+
+.comment-row textarea {
+    text-align: left;
+    resize: vertical;
+    width: 100%;
+    min-height: 120px;
+}
+
+.submit-row {
+    justify-content: flex-start;
+}
+
+.submit-row input[type="submit"] {
+    border: none;
+    border-radius: 999px;
+    padding: 12px 22px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #7c3aed 0%, #22c55e 100%);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.submit-row input[type="submit"]:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 12px 26px rgba(124, 58, 237, 0.4);
+    filter: brightness(1.05);
+}
+
+.error {
+    color: #ff6b6b;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 480px) {
@@ -152,8 +233,37 @@ div {
     .kt,
     .linux,
     .projectlinksdiv,
-    .otherWebs{
+    .kontaktieren {
         flex-direction: column;
+    }
+
+    .contact-form {
+        width: calc(100% - 20px);
+        padding: 18px 14px;
+        gap: 12px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+    }
+
+    .form-row label {
+        min-width: auto;
+        font-size: 0.95rem;
+    }
+
+    .comment-row {
+        align-items: stretch;
+    }
+
+    .submit-row {
+        align-items: center;
+    }
+
+    .submit-row input[type="submit"] {
+        width: 100%;
     }
 
     h1 {
@@ -220,7 +330,7 @@ div {
     .kt,
     .linux,
     .projectlinksdiv,
-    .otherWebs{
+    .kontaktieren {
         flex-direction: row;
     }
 
@@ -265,28 +375,18 @@ div {
     margin: 10px;
 }
 
-.geoweatherlink a {
-    color: var(gw-txt);
+.geoweatherlink {
+    color: var(--gw-txt);
     text-decoration: none;
 }
 
-.ssmpclink a {
+.ssmpclink {
     color: var(--ssmpc-txt);
     text-decoration: none;
 }
 
-.freetimesdklink a {
+.freetimesdklink {
     color: var(--fsdk-txt);
-    text-decoration: none;
-}
-
-.donation a {
-    color: var(--don-txt);
-    text-decoration: none;
-}
-
-.shop a {
-    color: var(--shop-txt);
     text-decoration: none;
 }
 
