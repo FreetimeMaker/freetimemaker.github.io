@@ -1,9 +1,9 @@
 <?php
 $dbHost = getenv('DB_HOST') ?: 'db.us-losa1.bengt.wasmernet.com';
 $dbPort = getenv('DB_PORT') ?: '16751';
-$dbName = getenv('DB_NAME') ?: 'db_f332bb08';
-$dbUser = getenv('DB_USER') ?: 'user_ead4230b';
-$dbPass = getenv('DB_PASS') ?: 'pw_vGenSvgsdkU3hrSGpOpyfqilrBbGugKv';
+$dbName = getenv('DB_NAME') ?: 'db_76c46041';
+$dbUser = getenv('DB_USER') ?: 'user_38e60771';
+$dbPass = getenv('DB_PASS') ?: 'pw_z4jp3xP3dOWwyv2BspWukN9I4jy1XSUZ';
 
 $pdoDrivers = extension_loaded('pdo_mysql') ? ['mysql'] : [];
 $mysqlSupported = in_array('mysql', PDO::getAvailableDrivers(), true);
